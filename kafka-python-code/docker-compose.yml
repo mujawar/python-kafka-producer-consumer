@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  producer:
+    image: "procucer"
+    container_name: zookeeper
+    ports:
+      - "8000:8000"
+  consumer:
+    image: "consumer"
+    container_name: kafka
+    ports:
+      - "9092:9092"
